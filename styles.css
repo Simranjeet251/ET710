@@ -1,0 +1,126 @@
+styles.css
+/* General Reset */
+* title{
+    padding: 10%;
+    box-sizing: border-box;
+    color: black;
+}
+
+/* Main Image */
+.main-image {
+    width: 400px !important;
+    height: 400px !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    image-orientation: flip;
+    
+}
+
+h1{
+    text-align: center;
+    color: crimson;
+}
+#about-us{
+    color: darkslategrey;
+    background-color: azure;
+    padding: 20px;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: #333;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #333;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Category Cards */
+#categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.category-card {
+    position: relative;
+    width: 30%;
+    cursor: pointer;
+}
+
+.category-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-card:hover img {
+    transform: scale(1.1);
+}
+
+.category-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.category-card:hover .category-overlay {
+    opacity: 1;
+}
+
+.category-overlay p {
+    font-size: 1.5em;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Content Sections */
+section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: blueviolet;
+    text-shadow: 10%;
+    text-decoration: solid;
+}
+section a {
+    color: plum;
+}
+
+section p {
+    font-size: 1.2em;
+    color: cadetblue;
+}
