@@ -133,6 +133,8 @@ img{width: 100%; display: block;}
 .blur3{
     filter: blur(20px);
 }
+
+/* invert filter */
 .invert1{
     filter: invert(2%);
 }
@@ -141,4 +143,17 @@ img{width: 100%; display: block;}
 }
 .invert3{
     filter: invert(100%);
+}
+
+/* EXERCISE */
+.sectioncontainer{
+    height: auto;
+    border: solid red 1px;
+}
+.container1, .container2, .container3{
+    width: 500px;
+    height: 600px;
+    border: solid blue 1px;
+    display: inline-block;
+    margin: 2em;
 }
