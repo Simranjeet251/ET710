@@ -165,6 +165,7 @@ img{width: 100%; display: block;}
     font-family: Arial, sans-serif;
     margin: 5em auto;
     margin-top: 5em;
+    filter: blur(0%)
 }
 
 .container1 {
