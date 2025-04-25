@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 14, carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+  <h1>Simranjeet Kaur</h1>
+  <h2>Carousel of text</h2>
+  <section class="carousel slide bg-warning" data-bs-ride="carousel">
+    <div class="carousel-inner text-center display-6 p-3">
+      <div class="carousel-item active"><p>Toys Flash Sale Today <span class="text danger display-4">40% off</span></p></div>
+      <div class="carousel-item"><p>Free <span class= "text-danger">Shipping</span> within US</p></div>
+      <div class="carousel-item "><p>Spring Break Sale <span class="text-danger">20% off</span></p></div>
+      </div>
+  </section>
+
+  <h2>Carousel of images with indicators and text</h2>
+  <section class="carousel slide w-50 m-auto" id="imageslide" data-bs-ride="carousel">
+     <main class="carousel-inner">
+     <div class="carousel-item active">
+      <img class="w-100" src="images/ny.jpg" alt="image of nyc">
+      <div class="carousel-caption bg-light text-dark p-1">
+        <h5>Jogging in the park</h5>
+        <p>a great way to clear your mind, enjoy nature, and stay active</p>
+        </div>
+        </div>
+     <div class="carousel-item"><img class="w-100" src="images/nyc (2).jpg" alt="image of nyc"></div>
+     <div class="carousel-item"><img class="w-100" src="images/nyc.jpg" alt="image of nyc"></div>
+    </main>
+
+    <!--next and previous button-->
+      <button class="carousel-control-prev" type="button" data-bs-target="#imageslide" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#imageslide" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- indicators / bars-->
+      <footer class="carousel-indicators">
+      <button type="button" class="acţive" data-bs-target="#imageslide" data-bs-slide-to="0"></button>
+      <button type="button" data-bs-target="#imageslide" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#imageslide" data-bs-slide-to="2"></button>
+      </footer>
+
+  </section>
+
+  <div class="container mt-5">
+  <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+    
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://via.placeholder.com/800x400?text=Slide+1" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to Slide 1</h5>
+          <p>This is the first slide's caption.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400?text=Slide+2" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Slide 2: Nature</h5>
+          <p>Enjoy the beauty of nature with this view.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400?text=Slide+3" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Slide 3: City Life</h5>
+          <p>Explore the hustle and bustle of urban life.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400?text=Slide+4" class="d-block w-100" alt="Slide 4">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Slide 4: Adventure</h5>
+          <p>Take a journey off the beaten path.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400?text=Slide+5" class="d-block w-100" alt="Slide 5">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Slide 5: Reflection</h5>
+          <p>Time to relax and reflect on your experiences.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
